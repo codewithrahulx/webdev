@@ -3,9 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title> CSS Variable</title>
+    <style>
+        :root{
+            --color:rgb(113, 113, 173);
+            --seccolor:rgb(83, 83, 211);
+            --defpad:23px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .nav{
+            background-color: var(--color) ;
+        }
+        ul{
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+            padding: 34px;
+            border: 2px solid var(--seccolor);
+            padding: var(--defpad);
+        }
+        ul li:first-of-type{
+            --color:rgb(220, 104, 125);
+
+            background-color: var(--color);
+        }
+        .container{
+                background-color: var(--seccolor);
+        }
+    </style>
 </head>
 <body>
-    
+    <div  class="nav">
+        <ul>
+            <li>Home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis velit blanditiis iure, in temporibus impedit architecto tempore qui! Odio accusamus beatae asperiores suscipit commodi earum voluptates necessitatibus cumque exercitationem voluptas, accusantium inventore libero illum maiores temporibus tempora aliquid cum adipisci! Enim minima odit blanditiis temporibus.
+    </div>
 </body>
 </html>

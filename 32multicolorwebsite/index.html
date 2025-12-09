@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multicolor website</title>
+    <style>
+        :root{
+            --color:rgb(70, 70, 104);
+            --secondcolor:rgb(227, 102, 186);
+            ---defpad:34px;
+            --defborder:rgb(31, 29, 29);
+            --defmargin:2px;
+        }
+        .nav{
+            background-color: var(--color);
+        }
+        ul{
+            display: flex;
+        }
+
+        ul li{
+            list-style: none;
+            border: 1px solid var(--defborder);
+            margin: 20px;
+            padding: var(---defpad);
+
+        }
+        ul li:first-child{
+            --secondcolor:rgb(163, 50, 126);
+            background-color: var(--secondcolor);
+        }
+        .container{
+            background-color: var(--secondcolor);
+            margin-top: var(--defmargin);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div>
+        <p class="container">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam neque natus nulla consequatur officiis velit
+            in fuga, vel perferendis repellat officia doloremque dolore saepe ullam necessitatibus omnis? Blanditiis,
+            maiores dolorem obcaecati repellat vitae at. Neque iure possimus quia laboriosam earum, facere quas. Quas,
+            itaque dignissimos?
+        </p>
+    </div>
+</body>
+
+</html>
