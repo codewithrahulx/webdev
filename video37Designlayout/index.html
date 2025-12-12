@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Design a laout</title>
+    <style>
+            nav{
+    border: 2px solid black ;
+    background-color: rgb(199, 236, 236);
+    position: fixed;
+    top: 0;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    }
+    nav ul{
+        list-style: none;
+        display: flex;
+        gap:40px;
+        margin: 50px;;
+        padding: 0;
+    }
+
+    
+nav img{
+    height: 60px;
+    width: auto;
+    margin-top: 15px;
+
+
+}
+.boxes{
+    border: 2px solid black;
+    width: 100%;
+    height: 120vh;
+    background-color: bisque;
+    display: flex;                
+    justify-content: space-between; 
+    padding: 20px;                 
+    box-sizing: border-box;
+    flex-wrap: wrap; 
+
+
+}
+.box1{
+    margin-top: 30vh;
+    margin-left: 10px;
+    border: 1px solid rgb(242, 151, 151);
+    height: 35vh;
+    width: 30vw;
+
+}
+.box2{
+    margin-top: 30vh;
+    margin-left: 10px;
+    border: 1px solid rgb(244, 143, 143);
+    height: 35vh;
+    width: 30vw;
+
+}
+.newlogo img {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    right: 20px;
+    top:90vh;
+}
+
+
+    </style>
+
+</head>
+<body>
+    <div class="box">
+        <nav>
+            <img src="https://cdn-icons-png.flaticon.com/128/3208/3208003.png" alt="">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="boxes">
+        <div class=" box1"> i am a box</div>
+        <div class=" box2">i am another box</div>
+        <div class="newlogo">
+    <img src="https://logo.svgcdn.com/devicon/carbon-original.png" alt="">
+    </div>
+    
+</div>
+    
+</body>
+</html>
